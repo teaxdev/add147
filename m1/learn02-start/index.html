@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adding JavaScript to HTML</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        function myFunction(){
+            document.getElementById('sample').innerHTML="Changed from a function in the head function" }
+    </script>
+    <script src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -14,25 +19,46 @@
         <h1>Adding JavaScript to HTML</h1>
     </header>
     <main>
+        <button type="button" onclick="myFunction()">Call Function in head</button>
+        <button type="button" onclick="myFunction2()">Call Function external script</button>
+        <p id="start"></p>
+        <script>
+            document.getElementById('start').innerHTML='JavaScript inside the script tag.'
+        </script>
+
         <p id="sample">
             This paragraph has an ID of sample
         </p>
 
         <button type="button" onclick="document.getElementById('sample').innerHTML = 'Alex Flores' ">Click Here</button>
+        <button type="button" onclick="document.getElementById('sample').style.fontSize = '30px';">Bigger</button>
 
         <div class="buttons">
-            <button>dog</button>
-            <button>cat</button>
+            <button onclick="document.getElementById('pet').src='images/dog.jpg'">dog</button>
+            <button onclick="document.getElementById('pet').src='images/cat.jpg'">cat</button>
         </div>
 
         <img src="images/dog.jpg" alt="animal" id="pet" class="center">
         <div class="buttons">
-            <button>show</button>
-            <button>hide</button>
+            <button onclick="document.getElementById('pet').style.display='block'">show</button>
+            <button onclick="document.getElementById('pet').style.display='none'">hide</button>
         </div>
 
         <div id="output">
             <h2>Output</h2>
+            <script>
+                document.write("doc.write");
+            </script>
+            <p id="oops"></p>
+            <button onclick='document.write("OOPS!!")'>oops</button>
+
+            <script>
+                alert("wow, alert!")
+            </script>
+
+            <script>
+                console.log("this is a log")
+            </script>
         </div>
     </main>
     <footer>
