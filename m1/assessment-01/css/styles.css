@@ -1,0 +1,41 @@
+:root {
+    --white: #ffffff;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.center {
+    display: block;
+    margin: 10px auto;
+}
+
+img {
+    width: 700px;
+    margin: 20px auto;
+    display: block;
+}
+
+.div1 {
+    justify-content: center;
+}
+
+.div2 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin: 5px;
+}
+
+h1 {
+    background-color: aqua;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+    padding: 10px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js"></script>
+    <script>
+        function myFunction2() {
+            document.getElementById("slap").innerHTML = 'This script was changed from the head' }
+    </script>
+</head>
+<body>
+    <h1>Assessment 1</h1>
+    <div class="div1">
+        <img src="images/dog.jpg" alt="animal" id="pet" class="center">
+    </div>
+
+    <div class="div2">
+        <button onclick="document.getElementById('pet').src='images/dog.jpg'">doggy</button>
+        <button onclick="document.getElementById('pet').src='images/cat.jpg'">kitty</button>
+        <button onclick="document.getElementById('pet').src='images/cat2.jpg'">kitty #2</button>
+        <button onclick="document.getElementById('pet').style.display='block'">show</button>
+        <button onclick="document.getElementById('pet').style.display='none'">hide</button>
+    </div>
+
+    <div class="div2">
+        <button type="button" onclick="myFunction()">Change Text Externally</button>
+        <button type="button" onclick="myFunction2()">Change Text Head</button>
+
+        <button onclick="document.getElementById('pet').style.width = '400px'">Change Image Width</button>
+        <button onclick="document.getElementById('slap').style.color = 'green'">Change Paragraph Color</button>
+    </div>
+
+    <div class="div2">
+        <p id="slap"></p>
+        <script>
+            document.getElementById("slap").innerHTML = "Script text!"
+        </script>
+    </div>
+</body>
+</html>
