@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js"></script>
+</head>
+<body onload="foodSelect()">
+    <div class="center">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="fname"><br>
+    </div>
+    <div class="container">
+        <form>
+            <label for="coffee">Coffee</label>
+            <input type="text" id="drinkcount1"/> <br/>
+            
+            <label for="tea">Tea</label>
+            <input type="text" id="drinkcount2"/> <br/>
+            
+            <label for="soda">Soda</label>
+            <input type="text" id="drinkcount3"/> <br/>
+            
+            <label for="juice">Juice</label>
+            <input type="text" id="drinkcount4"/> <br/>
+            
+            <label for="water">Water</label>
+            <input type="text" id="drinkcount5"/> <br/>
+            
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    <div class="container">
+        <form>
+            <label for="chicken">Chicken Sandwich</label>
+            <input type="text" id="sandcount1"/> <br/>
+
+            <label for="ham">Ham Sandwich</label>
+            <input type="text" id="sandcount2"/> <br/>
+
+            <label for="baloney">Baloney Sandwich</label>
+            <input type="text" id="sandcount3"/> <br/>
+
+            <label for="turkey">Turkey Sandwich</label>
+            <input type="text" id="sandcount4"/> <br/>
+
+            <label for="cheese">Grilled Cheese</label>
+            <input type="text" id="sandcount5"/> <br/>
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    <div class="container">
+        <form>
+            <label for="icecream">Ice Cream</label>
+            <input type="text" id="descount1"/> <br/>
+
+            <label for="chocolate">Chocolate</label>
+            <input type="text" id="descount2"/> <br/>
+
+            <label for="tiramisu">Tiramisu</label>
+            <input type="text" id="descount3"/> <br/>
+
+            <label for="applepie">Apple Pie</label>
+            <input type="text" id="descount4"/> <br/>
+
+            <label for="cake">Cake</label>
+            <input type="text" id="descount5"/> <br/>
+
+            <input type="reset" value="Reset">
+            <div class="bottom">
+                <button type="button" onclick="price()">Get Price</button>
+                <h3>Price:</h3>
+                <div id="totalPrice"></div>
+            </div>
+            <div class="bottom">
+                <div id="subTotalDrink"></div>
+                <div id="subTotalSand"></div>
+                <div id="subTotalDes"></div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

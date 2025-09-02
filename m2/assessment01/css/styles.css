@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    margin-left: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-right: 60%;
+    background-color:rgb(198, 120, 236);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container input {
+    max-width: 80px;
+}
