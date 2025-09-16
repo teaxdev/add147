@@ -37,3 +37,12 @@ footer {
     padding: 10px;
     background: rgb(198, 120, 236);
 }
+
+h2 {
+    font-size: 100%;
+}
+
+.bottom div {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}

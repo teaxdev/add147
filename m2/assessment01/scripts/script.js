@@ -36,12 +36,15 @@ function price() {
     let des5 = parseFloat(document.getElementById("descount5").value) 
 
     let drinkCost = 3 * (drink1 + drink2 + drink3 + drink4 + drink5)
+    let drinkTotal = drink1 + drink2 + drink3 + drink4 + drink5
     let sandCost = 10 * (sand1 + sand2 + sand3 + sand4 + sand5)
+    let sandTotal = sand1 + sand2 + sand3 + sand4 + sand5
     let desCost = 5 * (des1 + des2 + des3 + des4 + des5)
+    let desTotal = des1 + des2 + des3 + des4 + des5
 
-    document.getElementById("subTotalDrink").innerHTML = ("Subtotal for drinks is $" + drinkCost)
-    document.getElementById("subTotalSand").innerHTML = ("Subtotal for sandwiches is $" + sandCost)
-    document.getElementById("subTotalDes").innerHTML = ("Subtotal for desserts is $" + desCost)
+    document.getElementById("subTotalDrink").innerHTML = ("Subtotal for drinks is $" + drinkCost + ", You ordered " + drinkTotal + " drinks at $3 each")
+    document.getElementById("subTotalSand").innerHTML = ("Subtotal for sandwiches is $" + sandCost + ", You ordered " + sandTotal + " sandwiches at $10 each")
+    document.getElementById("subTotalDes").innerHTML = ("Subtotal for desserts is $" + desCost + ", You ordered " + desTotal + " desserts at $5 each")
 
     var totalCost = drinkCost + sandCost + desCost;
     document.getElementById("totalPrice").innerHTML = (name + " , your total is $" + totalCost)
