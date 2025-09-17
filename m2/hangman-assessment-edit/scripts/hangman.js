@@ -12,7 +12,6 @@ let output = '';
 let userLetter = '';
 // game setup works fine --steffen
 function setup() {
-    alert(answer);
     for (let i = 0; i < answer.length; i++) {
         display[i] = "_ ";
         output = output + display[i];
