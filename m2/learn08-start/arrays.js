@@ -26,32 +26,45 @@ function start() {
     document.getElementById("string").innerHTML = months.toString()
 
     // create two new arrays - weekends and weekdays, add the appropriate days to each
+    const weekends = ["Saturday", "Sunday"];
+    const weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
 
     // join the two arrays into a new array - week
-
+    const week = [weekdays, weekends];
 
     // print the contents of week to the week paragraph
-
+    document.getElementById("week").innerHTML = week;
+    
 
     // use the pop method to remove the last element of the week array, then print
     // the week array to the pop paragraph
-
+    week.pop();
+    document.getElementById("pop").innerHTML = week;
 
     // use the push function to add two fruits to the array fruits print to the fruits paragraph
     fruits = ["Apple", "Kiwi", "Mango"]
+    fruits.push("Banana", "Strawberry")
 
+    document.getElementById("fruits").innerHTML = fruits;
 
     // use the shift function to add a fruit to the front of the list and print to the fruits2 paragraph
+    fruits.shift()
+    document.getElementById("fruits2").innerHTML = fruits;
 
     // JS Array Sort  https://www.w3schools.com/js/js_array_sort.asp
 
     languages = ["COBOL", "livescript", "C++", "Python", "JavaScript", "Lua", "Basic"]
         // sort the array languages and print to the paragraph sorted
         // reverse the array languages and print to the paragraph reversed
-
+    languages.sort();
+    document.getElementById("sorted").innerHTML = languages;
+    languages.reverse();
+    document.getElementById("reversed").innerHTML = languages;
     // use the compare function to sort the numbers  and print to the num-sorted paragraph
     numbers = [42, 23, 21, 50, 20, 6, 31, 9]
+    numbers.sort(function (a, b) { return a - b });
+    document.getElementById("num-sorted").innerHTML = numbers;
 
     // Read the Array Iteration page https://www.w3schools.com/js/js_array_iteration.asp 
     // read the Array Const page https://www.w3schools.com/js/js_array_const.asp
