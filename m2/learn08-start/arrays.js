@@ -30,7 +30,7 @@ function start() {
     const weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
 
-    // join the two arrays into a new array - week
+    // join the two arrays into a new array - weeks
     const week = [weekdays, weekends];
 
     // print the contents of week to the week paragraph
