@@ -184,7 +184,7 @@ div {
 footer {
     text-align: center;
     padding: 20px;
-    background: var(--primary);
+    background: var(--text-light);
     color: var(--text-light);
 }
 
@@ -368,4 +368,15 @@ p {
     .col-12 {
         width: 100%;
     }
+}
+
+footer {
+    color: var(--text-light);;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: var(--primary);
 }
