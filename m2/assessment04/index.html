@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body onload="start()">
-    
+    <div class="main">
+        <div id="displaytext">
+            <div id="display"></div>
+        </div>
+        <div class="interact">
+            <input type="text" id="guess"/>
+            <button type="button" onclick="hotcold()">Guess!</button>
+        </div>
+    </div>
 </body>
 </html>
