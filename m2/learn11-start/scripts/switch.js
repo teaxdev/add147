@@ -1,5 +1,6 @@
 function calculate() {
-    var  chi = '';
+    var chi = '';
+    var zodiac = '';
     let myname = document.getElementById("fname").value;
     let month = parseInt(document.getElementById("month").value);
     let date = parseInt(document.getElementById("date").value);
@@ -153,10 +154,99 @@ function calculate() {
         default:
             chi = "Sadface";
 
+    }
 
+    switch (month) {
+    case 1:
+        if (date >= 21) {
+            zodiac = "Aquarius"
+        } else {
+            zodiac = "Capricorn"
+        }
+        break;
+    case 2:
+        if (date >= 19) {
+            zodiac = "Pisces"
+        } else {
+            zodiac = "Aquarius"
+        }
+        break;
+    case 3:
+        if (date >= 21) {
+            zodiac = "Aries"
+        } else {
+            zodiac = "Pisces"
+        }
+        break;
+    case 4:
+        if (date >= 20) {
+            zodiac = "Taurus"
+        } else {
+            zodiac = "Aries"
+        }
+        break;
+    case 5:
+        if (date >= 21) {
+            zodiac = "Gemini"
+        } else {
+            zodiac = "Taurus"
+        }
+        break;
+    case 6:
+        if (date >= 21) {
+            zodiac = "Cancer"
+        } else {
+            zodiac = "Gemini"
+        }
+        break;
+    case 7:
+        if (date >= 23) {
+            zodiac = "Leo"
+        } else {
+            zodiac = "Cancer"
+        }
+        break;
+    case 8:
+        if (date >= 23) {
+            zodiac = "Virgo"
+        } else {
+            zodiac = "Leo"
+        }
+        break;
+    case 9:
+        if (date >= 23) {
+            zodiac = "Libra"
+        } else {
+            zodiac = "Virgo"
+        }
+        break;
+    case 10:
+        if (date >= 23) {
+            zodiac = "Scorpio"
+        } else {
+            zodiac = "Libra"
+        }
+        break;
+    case 11:
+        if (date >= 22) {
+            zodiac = "Sagittarius"
+        } else {
+            zodiac = "Scorpio"
+        }
+        break;
+    case 12:
+        if (date >= 21) {
+            zodiac = "Capricorn"
+        } else {
+            zodiac = "Sagittarius"
+        }
+        break;
+        default:
+            zodiac = "oops";
     }
     document.getElementById("nameout").innerHTML = myname;
     document.getElementById("chinese").innerHTML = "Your Chinese zodiac sign is: " + chi;
+    document.getElementById("zodiac").innerHTML = "Your zodiac sign is: " + zodiac;
 
 
 }
