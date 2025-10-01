@@ -1,0 +1,41 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 60px;
+}
+
+h2, h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 100px;
+    background-color: rgb(177, 215, 215);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container, p {
+    border-radius: 10px;
+}
+
+p {
+    background-color: rgb(222, 242, 236);
+    padding: 40px;
+    /* padding-left: 25%;
+    padding-right: 25%; */
+    width: 85%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(64, 205, 182);
+    text-align: center;
+    padding: 10px;
+}
