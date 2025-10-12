@@ -1,0 +1,88 @@
+:root {
+    --white: #ffffff;
+    --green: #31df94;
+    --tint: #c0f1da;
+    --back: #d0ffe3c2;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h3 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.config {
+    margin-left: 10px;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: var(--tint);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.megacontainer {
+    margin-top: 20px;
+    margin-bottom: 200px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: var(--back);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.interior, .interior2 {
+    border: medium solid var(--green);
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px;
+}
+
+.interior:hover, .interior2:hover {
+    background-color: var(--tint);
+    border-width: 5px;
+    margin: 18px;
+}
+
+.interior {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.interior2 {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.cart {
+    background-color: var(--white); 
+    padding: 20px;
+    border: medium solid var(--green);
+    border-radius: 20px;
+}
+
+.items {
+    background-color: var(--tint);
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
