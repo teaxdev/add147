@@ -49,7 +49,8 @@ const itemData = {
 // cart array
 let cart = [];
 
-// so basically localStorarge saves the cart using JSON, which conveniently are similar to js objects
+// so basically localStorarge saves the cart using JSON, which are basically to js objects
+// im not really 100% whats going on with some of the JSON stuff, I had to get help to figure it out
 function loadCart() {
     const savedCart = localStorage.getItem('cart');
     if (savedCart) {
