@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midterm Project</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div class="top">
-        <h1>JS POS</h1>
+        <h1>JS POS: Entrees</h1>
         <div class="config">config</div>
     </div>
     <div class="megacontainer">
         <div class="cart">
             <h3>Cart</h3>
-            <div class="items">orange chicken</div>
+            <p class="items" id="steak"></p>
             <div class="items">kung pao chicken</div>
         </div>
         <div class="buttoncon">
             <div class="container">
-                <a class="interior" href="entree.html">1</a>
+                <div class="interior" onclick="addItem()">Steak</div>
                 <div class="interior">2</div>
                 <div class="interior">3</div>
             </div>
@@ -34,11 +36,12 @@
                 <div class="interior">9</div>
             </div>
             <div class="container">
-                <div class="interior2">10</div>
+                <a class="interior2" href="index.html">Return to menu</a>
                 <div class="interior2">11</div>
             </div>
         </div>
     </div>
     <script src="scripts/script.js"></script>
 </body>
+
 </html>
