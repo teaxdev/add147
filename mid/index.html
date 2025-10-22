@@ -6,36 +6,38 @@
     <title>Midterm Project</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body onload="loadCart()">
     <div class="top">
         <h1>JS POS</h1>
-        <div class="config">config</div>
     </div>
     <div class="megacontainer">
         <div class="cart">
             <h3>Cart</h3>
-            <div class="items">orange chicken</div>
-            <div class="items">kung pao chicken</div>
+            <div id="cart-items"></div>
+            <div class="total">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
         </div>
         <div class="buttoncon">
             <div class="container">
-                <a class="interior" href="entree.html">1</a>
-                <div class="interior">2</div>
-                <div class="interior">3</div>
+                <a class="interior" href="entree.html">Entrees</a>
+                <a class="interior" href="sides.html">Sides</a>
+                <a class="interior" href="desserts.html">Desserts</a>
             </div>
             <div class="container">
-                <div class="interior">4</div>
-                <div class="interior">5</div>
-                <div class="interior">6</div>
+                <a class="interior" href="drinks.html">Drinks</a>
+                <a class="interior" href="retail.html">Retail Items</a>
+                <div class="interior">Settings</div>
             </div>
+            <!-- I had originally planned to add more but I procrastinated a lil
             <div class="container">
                 <div class="interior">7</div>
                 <div class="interior">8</div>
                 <div class="interior">9</div>
-            </div>
+            </div> -->
             <div class="container">
-                <div class="interior2">10</div>
-                <div class="interior2">11</div>
+                <div class="interior2" onclick="checkout()">Checkout</div>
+                <div class="interior2" onclick="clearCart()">Clear Cart</div>
             </div>
         </div>
     </div>
