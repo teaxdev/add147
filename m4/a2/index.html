@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#hide").click(function(){
+        $("#p1").hide(); 
+    });
+
+    $("#hide2").click(function(){
+        $("#p2").hide(); // only hides their id
+    });
+
+    $("#show").click(function(){
+        $("p").show(); // shows all p elements
+    });
+
+    $("#toggle").click(function(){
+        $("#i1").toggle(); // toggles image
+    });
+    });
+    </script>
+</head>
+<body>
+    <h2>hide</h2>
+    <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ut voluptates qui, possimus esse magnam voluptate explicabo. Incidunt iure, ad totam dolores, porro rerum dolor aliquid, tempore deleniti eos illum.</p>
+    <button id="hide">hide</button>
+
+    <h2>show</h2>
+    <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt ut voluptates qui, possimus esse magnam voluptate explicabo. Incidunt iure, ad totam dolores, porro rerum dolor aliquid, tempore deleniti eos illum.</p>
+    <button id="hide2">hide</button>
+    <button id="show">show</button>
+
+    <h2>toggle</h2>
+    <img id="i1" src="images/yes.jpg" alt="a prayer">
+    <button id="toggle">toggle</button>
+</body>
+</html>

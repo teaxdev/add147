@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<button id="start">Start</button>
+<button id="stop">Stop</button>
+
+<button id="up">Up</button>
+<button id="down">Down</button>
+<button id="left">Left</button>
+<button id="right">Right</button>
+
+<div id="box"></div>
+<div id="move"></div>
+
+<script> // i did this without reading the instructions so im gonna keep it
+$(document).ready(function(){
+    $("#start").click(function(){
+        $("#box")
+        .animate({ left: '400px', height: '+=150px', width: '+=150px'}, 5000)
+        .slideDown(2000, 
+        function(){ alert("animation finished"); // callback
+        });
+    });
+
+    $("#stop").click(function(){
+        $("div").stop(true, false); 
+    });
+
+    $("#up").click(function(){
+        $("#move").animate({ marginTop: "-=20px"}); 
+    });
+
+    $("#down").click(function(){
+        $("#move").animate({ marginTop: "+=20px"}); 
+    });
+
+    $("#left").click(function(){
+        $("#move").animate({ marginLeft: "-=20px"}); 
+    });
+
+    $("#right").click(function(){
+        $("#move").animate({ marginLeft: "+=20px"}); 
+    });
+
+});
+</script>
+
+</body>
+</html>

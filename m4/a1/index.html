@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+    });
+
+    $(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    });
+
+    $(document).ready(function(){
+    $("#hide2").click(function(){
+        $("#hi").hide();
+    });
+    });
+
+    $(document).ready(function(){
+    $("#hide3").click(function(){
+        $("h2").hide();
+    });
+    });
+    </script>
+</head>
+<body>
+    <p>If you click on me, I will disappear.</p>
+    <p>Click me away!</p>
+    <p>Click me too!</p>
+    <div id="hi">hi</div>
+    <h2>im h2</h2>
+    <h2>me two</h2>
+    <h2>h2o</h2>
+
+    <button id="hide">Click me</button>
+    <button id="hide2">hide div</button>
+    <button id="hide3">hide h2</button>
+</body>
+</html>
