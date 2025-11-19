@@ -1,0 +1,31 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    max-width: 20%;
+    margin-bottom: 20px;
+}
+
+#sep {
+    /* margin-top: 20px; */
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.normal {
+    font-size: medium;
+}
+
+.important {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}

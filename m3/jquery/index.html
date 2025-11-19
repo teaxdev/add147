@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // $("p").append("Some appended text.");
+            $("#sub").click(function () {
+                $("p").append("<p>Hello, " + $("#name").val() + "!</p>");
+            });
+            $("#heavy").click(function () {
+                $("p, label").addClass("important");
+            });
+
+            $("#normal").click(function () {
+                $("p, label").removeClass("important");
+            });
+
+            $("#dark").click(function () {
+                $("body").addClass("dark");
+            });
+
+            $("#color").click(function () {
+                $("body").removeClass("dark");
+            });
+        });
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <label for="uname">Username:</label>
+        <input type="text" id="uname">
+        <label for="q1">What is your favorite game?</label>
+        <input type="text" id="q1">
+        <label for="q2">What is your favorite genre?</label>
+        <input type="text" id="q2">
+        <label for="q3">What is your favorite game developer?</label>
+        <input type="text" id="q3">
+        <div id="sep">
+            <input type="button" id="sub">
+        </div>
+    </form>
+    <button id="heavy">big font</button>
+    <button id="normal">normal font</button>
+    <button id="dark">css</button>
+    <button id="color">light</button>
+    <p></p>
+</body>
+</html>
