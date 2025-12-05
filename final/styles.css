@@ -1,0 +1,83 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#animatedDiv {
+    width: 350px;
+    color: black;
+    position: absolute;
+    left: -400px;
+    top: 120px;
+    padding: 20px;
+    background: white;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-top: 10px;
+}
+
+#animationSection {
+    position: relative;
+    min-height: 300px;
+}
+
+#loadButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: lightblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#ajaxContent {
+    margin: 20px 0 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 50px;
+}
+
+#showList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.show-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+}
+
+.show-card img {
+    width: 75%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.show-card h2 {
+    margin: 15px;
+    color: #333;
+    font-size: 24px;
+    border-bottom: 3px solid lightblue;
+    padding-bottom: 10px;
+}
